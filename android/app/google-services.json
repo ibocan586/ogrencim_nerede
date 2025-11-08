@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "629134095105",
+    "project_id": "ogrencimnerede",
+    "storage_bucket": "ogrencimnerede.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629134095105:android:8171e0c1f5fae8f1812100",
+        "android_client_info": {
+          "package_name": "com.ogrencimnerede.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629134095105-m9ui3k9n4iut9cn2dddublcoarj1m773.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXY2pF5ZBsyuUZSJsqaj3xkok8424uhLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629134095105-m9ui3k9n4iut9cn2dddublcoarj1m773.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "629134095105-n3l0nat0cekc9k8l6jutmta6c37ku227.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ogrencimNerede"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
