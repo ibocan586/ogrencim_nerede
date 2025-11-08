@@ -4,7 +4,15 @@ use_frameworks!
 use_modular_headers!
 
 flutter_application_path = File.expand_path('..', __dir__)
-load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+podhelper = File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+
+if File.exist?(podhelper)
+  load podhelper
+else
+  puts "⚠️ podhelper.rb bulunamadı, Flutter iOS modülleri manuel kurulacak"
+  system("flutter build ios --no-codesign")
+  load podhelper if File.exist?(podhelper)
+end
 
 target 'Runner' do
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
