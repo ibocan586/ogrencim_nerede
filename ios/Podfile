@@ -5,5 +5,5 @@ use_modular_headers!
 
 target 'Runner' do
   flutter_application_path = '../'
-  eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+  load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
 end
