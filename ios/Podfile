@@ -1,3 +1,4 @@
+ENV['COCOAPODS_NO_REPOS_UPDATE'] = 'true'
 platform :ios, '14.0'
 
 use_frameworks!
