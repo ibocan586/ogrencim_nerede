@@ -1,0 +1,19 @@
+workflows:
+  ios_build:
+    name: iOS Build
+    environment:
+      flutter: stable
+      xcode: latest
+    scripts:
+      - name: Hazırlık
+        script: |
+          flutter clean
+          flutter pub get
+          flutter precache --ios
+          cd ios
+          pod repo update
+          pod install
+      - name: Build iOS
+        script: |
+          cd ..
+          flutter build ios --debug --no-codesign

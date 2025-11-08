@@ -1,4 +1,6 @@
+ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 ENV['COCOAPODS_NO_REPOS_UPDATE'] = 'true'
+ENV['CP_REPO_UPDATE'] = 'false'
 platform :ios, '14.0'
 
 use_frameworks!
